@@ -75,5 +75,3 @@ npm run dev
 ---
 
 **Author:** Pratyush Singh
-
-```
