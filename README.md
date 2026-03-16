@@ -1,10 +1,10 @@
-I see the confusion! You want all of it in **one single document** so you don't have to piece it together.
+Perfect! Your folder structure is exactly where it needs to be. I see the **`README.md`** and **`screenshot.png`** sitting right at the top of the **`PROJECTS_JAVA`** folder.
 
-I've combined everything—the Overview, the Tech Stack, the Data Flow, and the full "How to Run" guide (including steps 3 and 4)—into this one block below.
+However, looking at your editor on the right, you’ve accidentally pasted my conversation text (like "I see the confusion...") into the actual file! We want your GitHub page to look clean and professional, so let's fix that.
 
-**Delete everything currently in your `README.md` and replace it with this:**
+### Step 1: Clean Up the File
 
----
+In your VS Code window (the one in the screenshot), **delete everything** currently in `README.md` and replace it with **only** the code block below:
 
 ```markdown
 # ⚡ No Reboot HQ: Event-Driven Configuration Manager
@@ -45,8 +45,6 @@ docker-compose up -d
 
 ```
 
-*This starts PostgreSQL (5432), Redis (6379), and Kafka (9092) in the background.*
-
 ### 3. Launch the Backend (Spring Boot)
 
 Inside the `config-manager` directory, run:
@@ -55,8 +53,6 @@ Inside the `config-manager` directory, run:
 ./mvnw clean spring-boot:run
 
 ```
-
-*The API will be live at `http://localhost:8080`.*
 
 ### 4. Launch the Frontend (React)
 
@@ -68,16 +64,16 @@ npm run dev
 
 ```
 
-*The UI will be live at `http://localhost:5173`. Hold Cmd and click the link to view the dashboard!*
-
 ---
 
 ## 👨‍💻 Key Accomplishments
 
 * **Full-Stack Integration:** Configured CORS to allow secure communication between React and Spring Boot.
 * **Real-Time Messaging:** Implemented a Pub/Sub model using Kafka to eliminate system downtime for config changes.
-* **Performance Optimization:** Utilized Redis as a Cache-Aside layer to reduce PostgreSQL read latency and ensure high availability.
+* **Performance Optimization:** Utilized Redis as a Cache-Aside layer to reduce PostgreSQL read latency.
 
 ---
 
 **Author:** Pratyush Singh
+
+```
