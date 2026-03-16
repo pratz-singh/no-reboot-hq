@@ -9,7 +9,7 @@ In your VS Code window (the one in the screenshot), **delete everything** curren
 ```markdown
 # ⚡ No Reboot HQ: Event-Driven Configuration Manager
 
-![No Reboot HQ Dashboard](./screenshot.png)
+![No Reboot HQ Dashboard](screenshot.png)
 
 ## 📖 Overview
 In modern enterprise microservices, restarting a server just to update a configuration variable (like a feature toggle, theme color, or maintenance mode) causes unacceptable downtime. **No Reboot HQ** solves this by utilizing an event-driven architecture to broadcast configuration changes in real-time across a distributed system. 
