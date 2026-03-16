@@ -1,0 +1,23 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: noreboot-postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: noreboot_db
+    ports:
+      - "5432:5432"
+
+  kafka:
+    image: confluentinc/confluent-local:7.5.0
+    container_name: noreboot-kafka
+    ports:
+      - "9092:9092"
+
+  redis:
+    image: redis:7
+    container_name: noreboot-redis
+    ports:
+      - "6379:6379"
+
